@@ -41,6 +41,20 @@ Each model has a defined lane, so no single agent defines the work, builds it, a
 
 ---
 
+## The Three-Pass Workflow
+
+Every significant piece of work moves through three passes. Each pass ends at a human decision point.
+
+**Pass 1: Plan and Approve.** Scope, architecture, design, acceptance criteria, and risks are set before any code is written. I approve the design before implementation begins.
+
+**Pass 2: Build and Validate.** A supervising agent coordinates implementation across specialist agents. An independent agent that didn't build the work then reviews the result against the Pass 1 acceptance criteria.
+
+**Pass 3: Release Decision.** The agents present one consolidated go/no-go recommendation with its evidence. I make the final approval.
+
+The structure separates the agent that builds from the agent that checks, and it fixes the definition of "done" in Pass 1, before anyone has an incentive to redefine it.
+
+---
+
 ## Approval Gates
 
 These actions always require my explicit, specific approval, even inside an approved plan:
